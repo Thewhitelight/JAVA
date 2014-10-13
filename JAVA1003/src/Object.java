@@ -1,39 +1,44 @@
-
 public class Object {
 	public static void main(String[] args) {
-		Cust mycust=new Cust("Tom", 100, "11111", 10000);
+		Cust1 mycust = new Cust1("Tom", 100, "11111", 10000);
 		mycust.setMoney(5000);
 		mycust.getMoney(3000);
-		mycust.changPWD("Tom");
-		mycust.search();
+		mycust.changePWDi("123456");
+		mycust.searchi();
 	}
 }
-class Cust1{
+
+class Cust1 {
 	String name;
 	int ID;
 	String PWD;
 	int money;
-	Cust1(String newName,int newID,String newPWD,int newMoney){
-		name=newName;
-		ID=newID;
-		PWD=newPWD;
-		money=newMoney;
+
+	Cust1(String newName, int newID, String newPWD, int newMoney) {
+		name = newName;
+		ID = newID;
+		PWD = newPWD;
+		money = newMoney;
 	}
+
 	public void getMoney(int newMoney) {
-		money=money-newMoney;
+		money = money - newMoney;
 	}
+
 	public void setMoney(int newMoney) {
-		money=money+newMoney;
+		money = money + newMoney;
 	}
-	 void search() {
+
+	public void searchi() {
 		// TODO Auto-generated method stub
-		System.out.println("ªß√˚"+name);
-		System.out.println("’À∫≈"+ID);
-		System.out.println("’Àªß”‡∂Ó"+money);
-		System.out.println("√‹¬Î"+PWD);
+		System.out.println("ªß√˚:" + name);
+		System.out.println("’À∫≈:" + ID);
+		System.out.println("’Àªß”‡∂Ó:" + money);
+		System.out.println("√‹¬Î:" + PWD);
 	}
-	 void changePWD(String newPWD) {
+
+	public void changePWDi(String newPWD) {
 		// TODO Auto-generated method stub
-		PWD=newPWD;
+		PWD = newPWD;
 	}
 }

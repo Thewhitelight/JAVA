@@ -35,11 +35,11 @@ class Cust {
 
 	public void search() {
 		// TODO Auto-generated method stub
-		System.out.println("所属银行" + Cust.bankName);
+		System.out.println("所属银行:" + Cust.bankName);
 		System.out.println("您是本银行的" + allNum + "的顾客中的第" + selfNum + "个顾客");
-		System.out.println("户名" + name);
-		System.out.println("账号" + ID);
-		System.out.println("账户余额" + money);
+		System.out.println("户名:" + name);
+		System.out.println("账号:" + ID);
+		System.out.println("账户余额:" + money);
 	}
 
 	public void changPWD(String newPWD) {
