@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class main03 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		input.close();
 		int a = 0;
 		int sum = 0;
 		for (int i = 0; i < 5; i++) {

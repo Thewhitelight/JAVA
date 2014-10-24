@@ -11,7 +11,7 @@ public class BankProgram {
 		st[2] = new Cust("Marry", 333, 3000, "333");
 		st[3] = new Cust("Linda", 444, 4000, "444");
 		st[4] = new Cust("Tom", 555, 5000, "555");
-		st[5] = new Cust("Jerry", 666, 6000, "6666");
+		st[5] = new Cust("Jerry", 666, 6000, "666");
 		st[6] = new Cust("Marry", 777, 7000, "777");
 		st[7] = new Cust("Linda", 888, 8000, "888");
 		while (true) {

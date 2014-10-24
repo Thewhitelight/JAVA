@@ -13,10 +13,10 @@ public class SchoolDemo {
 		Scanner input = new Scanner(System.in);
 		String name = input.next();
 		input.close();
-		getsName(name);
+		getName(name);
 	}
 
-	public static void getsName(String name) {
+	public static void getName(String name) {
 		int number = 0;
 		for (int i = 0; i < school.length; i++) {
 			if (students[i].getName().equals(name)) {
@@ -26,7 +26,8 @@ public class SchoolDemo {
 		}
 		for (int i = 0; i < school.length; i++) {
 			if (students[i].getsNumber() == number) {
-				System.out.println(students[i].getsNumber());
+				School school=new School(name, number);
+				System.out.println(school.getsNumber());
 				break;
 			}
 		}

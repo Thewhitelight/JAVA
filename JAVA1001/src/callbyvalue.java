@@ -1,5 +1,3 @@
-import java.awt.geom.Area;
-
 public class callbyvalue {
 	static int a = 5;
 
