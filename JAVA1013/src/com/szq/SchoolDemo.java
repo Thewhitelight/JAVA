@@ -11,23 +11,22 @@ public class SchoolDemo {
 	public static void main(String[] args) {
 		System.out.println("«Î ‰»Î–’√˚£∫");
 		Scanner input = new Scanner(System.in);
-		String name = input.next();
+		String names = input.next();
 		input.close();
-		getName(name);
+		getsName(names);
 	}
 
-	public static void getName(String name) {
-		int number = 0;
-		for (int i = 0; i < school.length; i++) {
+	public static void getsName(String name) {
+		int sNumber = 0;
+		for (int i = 0; i < students.length; i++) {
 			if (students[i].getName().equals(name)) {
-				number = students[i].getsNumber();
+				sNumber = students[i].getsNumber();
 				break;
 			}
 		}
 		for (int i = 0; i < school.length; i++) {
-			if (students[i].getsNumber() == number) {
-				School school=new School(name, number);
-				System.out.println(school.getsNumber());
+			if (school[i].getsNumber() == sNumber) {
+				System.out.println(school[i].getsName());
 				break;
 			}
 		}
@@ -48,8 +47,15 @@ class School {
 		return sName;
 	}
 
+	public void setsName(String sName) {
+		this.sName = sName;
+	}
+
 	public int getsNumber() {
 		return sNumber;
+	}
+	public void setsNumber(int sNumber) {
+		this.sNumber = sNumber;
 	}
 }
 
@@ -68,8 +74,19 @@ class Students {
 	public String getName() {
 		return name;
 	}
-
+	public int getNumber() {
+		return number;
+	}
 	public int getsNumber() {
 		return sNumber;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	public void setsNumber(int sNumber) {
+		this.sNumber = sNumber;
 	}
 }
